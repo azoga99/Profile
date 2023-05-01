@@ -1,0 +1,79 @@
+body{
+    background: #0B162B;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-header{
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+}
+
+.nav-ul{
+    display: flex;
+    list-style-type: none;
+    color: #EEE7DD;
+    margin: 10px 10px 10px 10px;
+}
+
+.nav-ul-li{
+    margin: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* .main{
+    display: flex;
+} */
+
+.main-h2{
+    color: #EEE7DD;
+    font-family: 'Raleway', sans-serif;
+    margin: 100px 10px 10px 200px;
+}
+
+hr{
+    width: 1000px;
+    margin: 0px 0px 0px 200px;
+    color: #EEE7DD;
+}
+
+.taskLI{
+    color: #EEE7DD;
+}
+
+.main-btn_form{
+    margin: 12px 20px 11px 200px;
+    background: #0B162B;
+    border: none;
+    width: 160px;
+    height: 35px;
+    border-radius: 20px;
+    background-image: url(img/add_dis_btn.svg);
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+
+.main-btn_form:hover{
+    background-image: url(img/add_act_btn.svg);
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+
+.main-btn_form:active{
+    background-image: url(img/add_dis_btn.svg);
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+
+.main-btn_form-text{
+    color: #EEE7DD;
+    font-family: 'Raleway', sans-serif;
+}
+
+.main-btn_form img{
+    margin: 0px 10px -4px 0px;
+}
