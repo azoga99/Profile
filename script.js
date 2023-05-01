@@ -7,6 +7,8 @@ function generateAddTaskForm() {
   taskInput.setAttribute("type", "text"); //назначил input атрибут type со значением "text"
   taskInput.setAttribute("name", "taskName"); //назначил input атрибут name со значением "taskName"
   taskInput.setAttribute("placeholder", "Введите название задачи"); //назначил input атрибут placeholder со значением "Введите название задачи"
+  taskInput.setAttribute("class", "NameTask");
+  taskInput.style.margin = "20px 0px 0px 0px";
   form.appendChild(taskInput); //добавил созданный элемент в конец формы
 
   // создать элемент кнопки для добавления задачи
@@ -30,6 +32,8 @@ function generateAddTaskForm() {
 function addTaskToList(taskName) {
   // получил список задач
   var taskList = document.getElementById("taskList");
+  taskList.style.position = "absolute";
+  taskList.style.left = "220px";
 
   // создал элемент задачи
   var taskItem = document.createElement("li"); //создал элемент списка
@@ -55,7 +59,7 @@ addTaskButton.addEventListener("click", function () {
   var form = generateAddTaskForm(); //генерирую форму
   var taskContainer = document.getElementById("taskContainer"); //выбрал div, в который будет записываться форма
   taskContainer.style.position = "absolute";
-  taskContainer.style.left = "220px";
+  taskContainer.style.left = "210px";
   taskContainer.appendChild(form); //добавил форму в div
 
 
