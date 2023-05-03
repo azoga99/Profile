@@ -2,20 +2,34 @@ function generateAddTaskForm() {
   // создал элемент формы
   var form = document.createElement("form");
 
-  // создал элемент ввода для названия задачи
-  var taskInput = document.createElement("input"); //создал элемент input
-  taskInput.setAttribute("type", "text"); //назначил input атрибут type со значением "text"
-  taskInput.setAttribute("name", "taskName"); //назначил input атрибут name со значением "taskName"
-  taskInput.setAttribute("placeholder", "Введите название задачи"); //назначил input атрибут placeholder со значением "Введите название задачи"
-  taskInput.setAttribute("class", "NameTask");
-  taskInput.style.margin = "20px 0px 0px 0px";
-  form.appendChild(taskInput); //добавил созданный элемент в конец формы
+  var TaskDiv = document.createElement("div"); //создал div для формы ввода задачи
+  TaskDiv.setAttribute("class", "TaskDiv");
+  TaskDiv.style.position = "relative";
+  TaskDiv.style.width = "447px";
+  TaskDiv.style.height = "117px";
+  TaskDiv.style.background = "rgba(38, 50, 74, 0.5)";
+  TaskDiv.style.borderRadius = "27px";
+  form.appendChild(TaskDiv);
 
-  // создать элемент кнопки для добавления задачи
-  var addButton = document.createElement("button"); //создал кнопку
-  addButton.setAttribute("type", "submit"); //назначил кнопке атрибут со значением "submit"
-  addButton.innerText = "Добавить"; //присвоил кнопке текст "Добавить задачу"
-  form.appendChild(addButton); //добавил созданный элемент в конец формы
+  // создал элемент ввода для названия задачи
+  var TaskInput = document.createElement("input"); //создал элемент input
+  TaskInput.setAttribute("type", "text"); //назначил input атрибут type со значением "text"
+  TaskInput.setAttribute("name", "TaskInput"); //назначил input атрибут name со значением "taskName"
+  TaskInput.setAttribute("placeholder", "Название задачи"); //назначил input атрибут placeholder со значением "Введите название задачи"
+  TaskInput.setAttribute("class", "NameTask");
+  TaskInput.style.position = "absolute";
+  TaskInput.style.fontSize = "18px";
+  TaskInput.style.margin = "31px 19px";
+  TaskInput.style.background = "transparent";
+  TaskInput.style.border = "none";
+  TaskDiv.appendChild(TaskInput);
+
+  // // создать элемент кнопки для добавления задачи
+  // var addButton = document.createElement("button"); //создал кнопку
+  // addButton.setAttribute("type", "submit");
+  // addButton.setAttribute("class", "BtnAdd"); //назначил кнопке атрибут со значением "submit"
+  // addButton.innerText = "Добавить"; //присвоил кнопке текст "Добавить задачу"
+  // form.appendChild(addButton); //добавил созданный элемент в конец формы
 
   // добавить обработчик событий для отправки формы
   form.addEventListener("submit", function (event) {

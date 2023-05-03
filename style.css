@@ -43,6 +43,7 @@ hr{
 
 .taskLI{
     color: #EEE7DD;
+    margin: 50px;
 }
 
 .main-btn_form{
@@ -76,4 +77,12 @@ hr{
 
 .main-btn_form img{
     margin: 0px 10px -4px 0px;
+}
+
+.main-taskList-ul{
+    margin: 20px;
+}
+
+.BtnAdd{
+    margin: 10px 0px 20px 0px;
 }
